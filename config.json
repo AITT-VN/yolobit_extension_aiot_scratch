@@ -1,0 +1,20 @@
+{
+    "id": "YoloBitAIoTExtension",
+    "extensionDisplay": {
+        "name": "gui.externalExtension.YoloBitAIoTExtension.name",
+        "iconURL": "/images/aiot.jpg",
+        "insetIconURL": "/images/aiot.jpg",
+        "description": "gui.externalExtension.YoloBitAIoTExtension.description"
+    },
+    "translate": {
+        "vi": {
+            "gui.externalExtension.YoloBitAIoTExtension.name": "AIoT KIT",
+            "gui.externalExtension.YoloBitAIoTExtension.description": "Mục mở rộng cho kit AIoT"
+
+        },
+        "en": {
+            "gui.externalExtension.YoloBitAIoTExtension.name": "AIoT KIT",
+            "gui.externalExtension.YoloBitAIoTExtension.description": "Template extension description"
+    }
+}
+}
