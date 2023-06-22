@@ -11,7 +11,7 @@ class Scratch3YoloBitAIoT {
             name: 'AIoT KIT',
             blockIconURI: iconURL,
             allowBlockTypes: {
-                rover_ir_event: 1
+                aiot_ir_event: 1
             },
             color1: '#44cbc6',
             color2: '#44cbc6',
@@ -113,7 +113,7 @@ class Scratch3YoloBitAIoT {
                     opcode: 'init_ultrasonic',
                     rawCode: {
                         imports: 'from aiot_hcsr04 import HCSR04\n',
-                        code:'aiot_ultrasonic = HCSR04(trigger_pin=/*{TRI_PIN}*/.pin, echo_pin=/*{EC_PIN}*.pin)\n'
+                        code:'aiot_ultrasonic = HCSR04(trigger_pin=/*{TRI_PIN}*/.pin, echo_pin=/*{EC_PIN}*/.pin)\n'
                     },
                     text: [
                         {
@@ -281,7 +281,7 @@ class Scratch3YoloBitAIoT {
                 {
                     opcode: 'relay_control',
                     rawCode: {
-                        code:"/*{PIN}*/.write_digital(/*{ACTION}}*/)\n"
+                        code:"/*{PIN}*/.write_digital(/*{ACTION}*/)\n"
                     },
                     text: [
                         {
@@ -342,7 +342,10 @@ class Scratch3YoloBitAIoT {
                         },
                         '[DO]'
                     ],
-                    arguments: {                        
+                    arguments: {    
+                        PIN: {
+                            menu: 'yolobit_pins'
+                        },                    
                         DO: {
                             type: Scratch.ArgumentType.STATEMENT
                         }

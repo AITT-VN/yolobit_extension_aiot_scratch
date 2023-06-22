@@ -2,8 +2,8 @@
     "id": "YoloBitAIoTExtension",
     "extensionDisplay": {
         "name": "gui.externalExtension.YoloBitAIoTExtension.name",
-        "iconURL": "/images/aiot.jpg",
-        "insetIconURL": "/images/aiot.jpg",
+        "iconURL": "/images/aiot01.png",
+        "insetIconURL": "/images/aiot01.png",
         "description": "gui.externalExtension.YoloBitAIoTExtension.description"
     },
     "translate": {
@@ -14,7 +14,7 @@
         },
         "en": {
             "gui.externalExtension.YoloBitAIoTExtension.name": "AIoT KIT",
-            "gui.externalExtension.YoloBitAIoTExtension.description": "Template extension description"
+            "gui.externalExtension.YoloBitAIoTExtension.description": "AIoT extension description"
     }
 }
 }
