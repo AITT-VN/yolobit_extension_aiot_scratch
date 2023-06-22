@@ -313,7 +313,7 @@ class Scratch3YoloBitAIoT {
                     ],
                     arguments: {                        
                         PIN: {
-                            menu: 'pick_keys'
+                            menu: 'yolobit_pins'
                         },
                         LED_NUM: {
                             menu: 'led_num'
@@ -412,7 +412,7 @@ class Scratch3YoloBitAIoT {
                 }                
             ],
             menus:{                
-                action_backligth: [
+                action_backlight: [
                     {
                         text: {
                             default: 'bật',
