@@ -194,7 +194,7 @@ class Scratch3YoloBitAIoT {
                     opcode: 'lcd_print',
                     rawCode: {
                         imports: 'from aiot_lcd1602 import LCD1602\naiot_lcd1602 = LCD1602()\n',
-                        code:"aiot_lcd1602.move_to(/*{X}*/, /*{Y}*/)\naiot_lcd1602.putstr('/*{TEXT}*/')\n"
+                        code:"aiot_lcd1602.move_to(/*{X}*/, /*{Y}*/)\naiot_lcd1602.putstr(/*{TEXT}*/)\n"
                     },
                     text: [
                         {
