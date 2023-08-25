@@ -302,8 +302,8 @@ class Scratch3YoloBitAIoT {
                 {
                     opcode: 'rgb_led',
                     rawCode: {
-                        imports: 'from aiot_rgbled import RGBLed\n tiny_rgb = RGBLed(/*{PIN}*/.pin, 4)',
-                        code:"tiny_rgb.show(/*{LED_NUM}*/, hex_to_rgb('/*{COLOR}*/'))"
+                        imports: 'from aiot_rgbled import RGBLed\ntiny_rgb = RGBLed(/*{PIN}*/.pin, 4)\n',
+                        code:"tiny_rgb.show(/*{LED_NUM}*/, hex_to_rgb('/*{COLOR}*/'))\n"
                     },
                     text: [
                         {
