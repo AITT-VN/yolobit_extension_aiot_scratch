@@ -432,7 +432,8 @@ class Scratch3YoloBitAIoT {
                         }
 
                     },
-                    blockType: Scratch.BlockType.BOOLEAN
+                    disableMonitor: true,
+                    blockType: Scratch.BlockType.NUMBER
                 }                
             ],
             menus:{                
