@@ -409,6 +409,30 @@ class Scratch3YoloBitAIoT {
                         
                     },
                     blockType: Scratch.BlockType.COMMAND
+                },
+                {
+                    opcode: 'aiot_mqx',
+                    rawCode: {
+                        imports: "from machine import Pin\nfrom mq import MQ\n",
+                        setup: "mq = MQ(Pin(/*{PIN}*/.adc_pin))\n",
+                        code:"/*{ACTION}*/"
+                    },
+                    text: [
+                        {
+                            default: 'lấy giá trị [ACTION] từ cảm biến',
+                            id: "gui.externalExtension.YoloBitAIoTExtension.aiot_mqx"
+                        }
+                    ],
+                    arguments: {                        
+                        ACTION: {
+                            menu: 'pick_action'
+                        },
+                        PIN: {
+                            menu: 'yolobit_pins'
+                        }
+
+                    },
+                    blockType: Scratch.BlockType.BOOLEAN
                 }                
             ],
             menus:{                
@@ -844,6 +868,22 @@ class Scratch3YoloBitAIoT {
                             id: 'gui.externalExtension.YoloBitAIoTExtension.P20'
                         },
                         value: 'pin20'
+                    }
+                ],
+                pick_action: [
+                    {
+                        text: {
+                            default:'ppm',
+                            id: 'gui.externalExtension.YoloBitAIoTExtension.get_ppm'
+                        },
+                        value: "A"
+                    },
+                    {
+                        text: {
+                            default:'analog',
+                            id: 'gui.externalExtension.YoloBitAIoTExtension.get_analog'
+                        },
+                        value: "B"
                     }
                 ]
             }
