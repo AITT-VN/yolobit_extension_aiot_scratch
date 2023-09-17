@@ -419,7 +419,7 @@ class Scratch3YoloBitAIoT {
                     },
                     text: [
                         {
-                            default: 'lấy giá trị [ACTION] từ cảm biến',
+                            default: 'lấy giá trị [ACTION] từ cảm biến chân [PIN]',
                             id: "gui.externalExtension.YoloBitAIoTExtension.aiot_mqx"
                         }
                     ],
