@@ -135,7 +135,7 @@ class Scratch3YoloBitAIoT {
                     opcode: 'ultrasonic_read',
                     rawCode: {
                         imports: 'from aiot_hcsr04 import HCSR04\n',
-                        code:'aiot_ultrasonic./*{VALUE}*/'
+                        code:'aiot_ultrasonic/*{VALUE}*/'
                     },
                     text: [
                         {
@@ -885,6 +885,22 @@ class Scratch3YoloBitAIoT {
                             id: 'gui.externalExtension.YoloBitAIoTExtension.get_analog'
                         },
                         value: "B"
+                    }
+                ],
+                ultrasonic_value: [
+                    {
+                        text: {
+                            default:'cm',
+                            id: 'gui.externalExtension.YoloBitAIoTExtension.get_cm'
+                        },
+                        value: ".distance_cm()"
+                    },
+                    {
+                        text: {
+                            default:'mm',
+                            id: 'gui.externalExtension.YoloBitAIoTExtension.get_mm'
+                        },
+                        value: ".distance_mm()"
                     }
                 ]
             }
